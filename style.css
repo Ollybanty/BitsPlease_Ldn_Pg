@@ -8,11 +8,11 @@
 
 html,
 body {
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   scroll-behavior: smooth;
 }
 
@@ -28,6 +28,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   animation: transitionIn 3.5s;
+  position: relative;
+  padding-bottom: 120px;
+  min-height: 431px;
 }
 
 @keyframes transitionIn {
@@ -51,9 +54,9 @@ body {
 }
 
 .wrapper {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
 }
 
@@ -87,23 +90,31 @@ body {
 }
 
 .main-cnt {
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* min-height: 1000px; */
+  /* min-height: calc(100vh -80px -8px); */
+  /* height: 100vh; */
+  /* max-height: 500px; */
+  /* width: 100%; */
   /* animation: slideInFromBottom 1s ease-in; */
 }
 
 .main-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 86.5%;
-  margin-left: 7%;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-evenly; */
+  /* width: 86.5%; */
+  /* margin-left: 7%; */
+  padding: 0 100px;
 }
 
-.first-half {
-  width: 50%;
+/* .first-half {
+  width: 60%;
   padding: 0 10px;
   transition: 1.5s ease-in-out;
-}
+} */
 
 .title {
   font-size: 50px;
@@ -119,23 +130,34 @@ body {
   position: relative;
 }
 .hero-img {
-  width: 50%;
+  width: 100vw;
+  max-width: 50%;
   animation: slideInFromRight 1s ease-in;
 }
 
-.smilie-ctn {
+.hero-img img {
+  width: 800px;
+  height: 300px;
+}
+/* .smilie-ctn {
   display: flex;
   justify-content: space-between;
+} */
+
+.para-three-ctn {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 #smilie {
-  position: absolute;
+  position: relative;
   width: 100px;
-  top: 284px;
-  left: 220px;
-  right: 0;
-  z-index: 0;
-  transition: 1.5s ease-in-out;
+  top: -17px;
+  left: 112px;
+  /* right: 50px; */
+  /* z-index: 0; */
+  /* transition: 1.5s ease-in-out; */
 
   /* width: 110px;
   margin-right: 370px;
@@ -143,14 +165,16 @@ body {
 }
 
 .para-four {
-  font-size: 33px;
+  font-size: 25px;
   margin-top: 20px;
+  font-weight: normal;
+  font-style: normal;
 }
 
 #hero-img {
-  width: 100%;
-  /* margin-top: 120px; */
-  padding-top: 80px;
+  width: 90%;
+  margin-top: 120px;
+  padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -167,25 +191,36 @@ body {
   color: white;
   border: none;
   cursor: pointer;
-  transition: width 1s ease-in-out;
+  transition: ease-in 350ms;
+  /* transition: 350ms ease-in-out; */
 }
 
-.contact-btn-two:active {
+.contact-btn-two:hover {
+  opacity: 1.2;
+
+  /* width: 200px; */
+  background-color: var(--color-yellow);
+}
+
+/* .contact-btn-two:active {
   box-shadow: 0 5px var(--color-green);
+  background-color: var(--color-yellow);
   transform: translateY(10px);
   outline: none;
   border: none;
-  transition: 1s ease-out;
-}
+  transition: 350ms ease-in-out;
+} */
 
 footer {
-  position: fixed;
+  position: absolute;
+  bottom: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 100px;
+  /* margin-top: 50px; */
+  margin-bottom: 1px;
   animation: bounce 2s;
   animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
   animation-iteration-count: infinite;
@@ -197,7 +232,7 @@ footer {
     transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translate3d(0, 100px, 0);
+    transform: translate3d(0, 5px, 0);
   }
 }
 /* Prefix Support */
@@ -224,7 +259,7 @@ ball {
 .color-ft {
   display: flex;
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
   width: 80%;
 }
 
@@ -265,15 +300,9 @@ ball {
   background-color: var(--color-yellow);
 }
 
-.contact-btn-two:hover {
-  opacity: 1.2;
-  width: 200px;
-  background-color: #090979;
-}
-
 .contact-btn:hover {
-  opacity: 0.89;
-  transition: ease-out 0.9s;
+  opacity: 2;
+  transition: ease-out 350ms;
 }
 
 /* @media screen and (max-width: 480px) {
