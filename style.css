@@ -49,8 +49,9 @@ body {
   background-color: var(--color-blue);
   padding-top: 10px;
   height: 80px;
-  width: 100vw;
-  max-width: 100%;
+  width: auto;
+  /* width: 100vw;
+  max-width: 100%; */
 }
 
 .wrapper {
@@ -220,8 +221,8 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   /* margin-top: 50px; */
-  margin-bottom: 1px;
-  animation: bounce 2s;
+  margin-bottom: -8px;
+  animation: bounce 1.5s;
   animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
   animation-iteration-count: infinite;
   /* animation: footer 1s reverse linear infinite; */
