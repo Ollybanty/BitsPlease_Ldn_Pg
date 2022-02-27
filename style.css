@@ -909,10 +909,6 @@ ball {
 }
 
 @media (max-width: 180px) {
-  body {
-    background-color: aqua;
-  }
-
   .header-container {
     background-color: var(--color-blue);
     padding-top: 10px;
