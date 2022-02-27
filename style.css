@@ -176,10 +176,10 @@ body {
   width: 500px;
   margin-top: 100px;
   /* animation: slideInFromRight 1s ease-in; */
-  animation: zoomin 2s linear 1;
+  /* animation: zoomin 2s linear 1;
   animation-delay: 2s;
   visibility: hidden;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
 }
 
 #hero-img {
@@ -191,7 +191,7 @@ body {
   padding-right: 10px; */
 }
 
-@keyframes zoomin {
+/* @keyframes zoomin {
   0% {
     transform: scale(0.5);
     visibility: visible;
@@ -200,7 +200,7 @@ body {
     transform: scale(1);
     visibility: visible;
   }
-}
+} */
 
 /* .smilie-ctn {
   display: flex;
@@ -337,9 +337,6 @@ ball {
 }
 
 @media (max-width: 1150px) {
-  body {
-    background-color: green;
-  }
   .para-one {
     color: white;
     margin-top: 15px;
@@ -430,9 +427,6 @@ ball {
 }
 
 @media (max-width: 780px) {
-  body {
-    background-color: cyan;
-  }
   .main-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -525,9 +519,6 @@ ball {
 }
 
 @media (max-width: 520px) {
-  body {
-    background-color: red;
-  }
   .wrapper {
     width: 100%;
     display: flex;
@@ -583,8 +574,8 @@ ball {
   }
 
   .hero-img {
-    height: 400px;
-    width: 500px;
+    height: 300px;
+    width: 400px;
     margin-top: 10px;
     margin-bottom: 50px;
     animation: slideInFromRight 1s ease-in;
@@ -614,9 +605,9 @@ ball {
 
   .smile-ctn {
     position: absolute;
-    width: 60px;
+    width: 58px;
     top: 23px;
-    left: 70px;
+    left: 72px;
     right: 0;
     z-index: 10;
     transition: 1.5s ease-in-out;
@@ -629,10 +620,6 @@ ball {
 }
 
 @media (max-width: 330px) {
-  body {
-    background-color: purple;
-  }
-
   .header-container {
     background-color: var(--color-blue);
     padding-top: 10px;
